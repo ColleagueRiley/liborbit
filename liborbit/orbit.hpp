@@ -6,5 +6,5 @@ namespace orbit{
 
 orbit::ellipse orbit::getEllipse(double length, double foci1, double foci2){
 	double e=(double)((foci1-foci2))/length;
-    return {length, length * (double)(1-e) };
+    return {length, length - (double)(1-e) };
 }
